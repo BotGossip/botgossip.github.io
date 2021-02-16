@@ -1,7 +1,5 @@
 ---
 title: "API Reference"
-date: 2021-02-16T18:56:15Z
-draft: true
 ---
 
 ## Authentication
@@ -32,7 +30,9 @@ The basic route format for API routes is `/{version}/{topic}/{resource}`. All ro
 
 {{< route method="GET" route="/details" >}}
 
-⚠️ This is **not** a versioned endpoint and should not be prefixed with `/{version}`
+{{< tip "warning" >}}
+This is **not** a versioned endpoint and should not be prefixed with `/{version}`
+{{< /tip >}}
 
 This endpoint details information about the server including it's capabilities and API version.
 
