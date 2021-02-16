@@ -39,11 +39,11 @@ This endpoint details information about the server including it's capabilities a
 
 Return Body:
 
-|Field|Type|Description|
-|---|---|---|
-|version|string|The server's API version.|
-|capabilities|json|A `capabilities` object detailing the server's capabilities.|
-|meta|json|Any extra data the server wants to give about itself.|
+| Field        | Type   | Description                                                  |
+| ------------ | ------ | ------------------------------------------------------------ |
+| version      | string | The server's API version.                                    |
+| capabilities | json   | A `capabilities` object detailing the server's capabilities. |
+| meta         | json   | Any extra data the server wants to give about itself.        |
 
 Example Body:
 
@@ -69,9 +69,9 @@ This endpoint creates a new message with the event type of `event_type` which wi
 
 Request Body:
 
-|Field|Type|Description|
-|---|---|---|
-|data|json|The JSON data of the event.|
+| Field | Type | Description                 |
+| ----- | ---- | --------------------------- |
+| data  | json | The JSON data of the event. |
 
 Example Body:
 
@@ -93,10 +93,10 @@ When this endpoint is called it will create a POST request to all listeners of t
 
 Post Body:
 
-|Field|Type|Description|
-|---|---|---|
-|event|string|The event type of the message.|
-|data|json|The JSON data of the event.|
+| Field | Type   | Description                    |
+| ----- | ------ | ------------------------------ |
+| event | string | The event type of the message. |
+| data  | json   | The JSON data of the event.    |
 
 Example Body:
 
@@ -121,9 +121,9 @@ This endpoint registers a new message listener webhook for event messages. If no
 
 Request Body:
 
-|Field|Type|Description|
-|---|---|---|
-|url|string|The webhook URL that events should be posted to.|
+| Field | Type   | Description                                      |
+| ----- | ------ | ------------------------------------------------ |
+| url   | string | The webhook URL that events should be posted to. |
 
 Example Body:
 
