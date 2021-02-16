@@ -1,5 +1,6 @@
 ---
 title: "API Reference"
+weight: 6
 ---
 
 ## Authentication
