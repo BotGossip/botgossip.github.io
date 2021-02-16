@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/home/runner/work/gossip.github.io/gossip.github.io",
+	"sourceRoot": "/home/runner/work/botgossip.github.io/botgossip.github.io",
 	"sources": [
 		"themes/compose/assets/sass/main.sass",
 		"assets/sass/_variables.sass",
