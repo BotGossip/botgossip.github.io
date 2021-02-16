@@ -3,7 +3,9 @@ title: "Cases"
 weight: 5
 ---
 
-ℹ️ This page needs to be moved to the API Reference, and rewritten according to the new route standards
+{{< tip >}}
+This page needs to be moved to the API Reference, and rewritten according to the new route standards
+{{< /tip >}}
 
 Cases are actions tied to a specific user.
 
