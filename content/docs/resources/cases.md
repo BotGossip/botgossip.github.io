@@ -3,6 +3,8 @@ title: "Cases"
 weight: 5
 ---
 
+ℹ️ This page needs to be moved to the API Reference, and rewritten according to the new route standards
+
 Cases are actions tied to a specific user.
 
 They include some standardised properties as well as permitting for some freeform data to be stored in JSON format.
