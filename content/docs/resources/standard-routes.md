@@ -21,7 +21,7 @@ Request Body:
 | `reason`   | string.     | Reason for action, might be empty                                    |
 
 
-Where `case_action` is one of (`BAN`, `KICK`, `MUTE`, `WARN`)
+Where `case_action` is one of (`BAN`, `KICK`, `MUTE`, `WARN`, `UNMUTE`, `UNBAN`, `NOTE`)
 
 Example Body:
 
