@@ -34,7 +34,7 @@ When a client exceeds the limit, the server MUST send a 429 Too Many Requests st
 
 ## Routes
 
-The basic route format for API routes is `/{namespace}/{version}/{topic}/{resource}`. All routes detailed below assume that `/{version}` is used as the base URL and hence does not include that. The current API version is `v1`, though the version used by a server may differ from the latest version.
+The basic route format for API routes is `/{namespace}/{version}/{topic}/{resource}`. The version is namespace specific. If the namespace is gossip then the current active version is `v1`.
 
 `gossip` is a reserved namespace, used for gossip standards. Implementors are free to implement custom routes on their own namespace
 
@@ -82,4 +82,3 @@ Example Body:
 ### Standard routes
 
 Routes made standard and implemented inside the `gossip` namespace are documented in [Standard Routes](standard-routes.md)
-
