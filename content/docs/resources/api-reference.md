@@ -25,10 +25,10 @@ The format of that Authorization token its left to the implementor
 
 Implementors are free to implement rate limits as needed, the following headers should be sent when a rate limit is active
 
-`X-RateLimit-Limit` Limit on number of calls for the current endpoint
-`X-RateLimit-Remaining` Number of calls remaining for the current endpoint
-`X-RateLimit-Reset` Unix epoch timestamp in milliseconds for next reset
-`X-RateLimit-Retry-After` Only sent after rate limit is active, milliseconds until the client should retry
+- `X-RateLimit-Limit` Limit on number of calls for the current endpoint
+- `X-RateLimit-Remaining` Number of calls remaining for the current endpoint
+- `X-RateLimit-Reset` Unix epoch timestamp in milliseconds for next reset
+- `X-RateLimit-Retry-After` Only sent after rate limit is active, milliseconds until the client should retry
 
 When a client exceeds the limit, the server MUST send a 429 Too Many Requests status code alongwith a `X-RateLimit-Retry-After` header
 
