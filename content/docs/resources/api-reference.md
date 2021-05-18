@@ -79,76 +79,7 @@ Example Body:
 }
 ```
 
-From here it should probably be removed
+### Standard routes
 
-### Message Routes 
+Routes made standard and implemented inside the `gossip` namespace are documented in [Standard Routes](standard-routes.md)
 
-{{< route method="POST" route="/core/messages/new/{event_type}" >}}
-
-This endpoint creates a new message with the event type of `event_type` which will be POSTed to clients who have registered webhooks for that event.
-
-Request Body:
-
-| Field  | Type | Description                 |
-| ------ | ---- | --------------------------- |
-| `data` | json | The JSON data of the event. |
-
-Example Body:
-
-```json
-{
-  "data":{
-    "type":"member_join",
-    "guild":810932869862129664,
-    "member":{
-      "id":297045071457681409,
-      "name":"vcokltfre",
-      "discriminator":6868
-    }
-  }
-}
-```
-
-When this endpoint is called it will create a POST request to all listeners of that event with the following data structure:
-
-Post Body:
-
-| Field   | Type   | Description                    |
-| ------- | ------ | ------------------------------ |
-| `event` | string | The event type of the message. |
-| `data`  | json   | The JSON data of the event.    |
-
-Example Body:
-
-```json
-{
-  "event":"log",
-  "data":{
-    "type":"member_join",
-    "guild":810932869862129664,
-    "member":{
-      "id":297045071457681409,
-      "name":"vcokltfre",
-      "discriminator":6868
-    }
-  }
-}
-```
-
-{{< route method="POST" route="/core/messages/register/{event_type}" >}}
-
-This endpoint registers a new message listener webhook for event messages. If no `event_type` is passed it will be sent all events which it is authorized to receive. It is possible to register multiple events to a single webhook, therefore as previously detailed an `event` attribute is sent in the event POST.
-
-Request Body:
-
-| Field | Type   | Description                                      |
-| ----- | ------ | ------------------------------------------------ |
-| `url` | string | The webhook URL that events should be posted to. |
-
-Example Body:
-
-```json
-{
-  "url":"https://gossip.vcokltf.re/event"
-}
-```
