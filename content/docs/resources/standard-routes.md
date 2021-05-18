@@ -28,7 +28,6 @@ Example Body:
 ```json
 {
   "data":{
-    "type":"member_join",
     "guild":810932869862129664,
     "user": 297045071457681409,
     "actioner": 427045071457681409,
@@ -67,7 +66,6 @@ Example return:
   "total_pages": 20
   "data": [
     {
-      "type":"member_join",
       "guild":810932869862129664,
       "user": 297045071457681409,
       "actioner": 427045071457681409,
