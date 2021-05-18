@@ -65,7 +65,7 @@ Example return:
   "page_size": 200,
   "current_page": 1,
   "total_pages": 20
-  "data":[
+  "data": [
     {
       "type":"member_join",
       "guild":810932869862129664,
